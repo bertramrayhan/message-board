@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+h1, h2, h3, h4, p {
+    color: #343A40;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6C757D;
+}
+
+body {
+    background-color: #F4F6F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    gap: 30px;
+    width: fit-content;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container-message-input {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 
+            0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+#message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#message-form input, #message-form textarea {
+    padding: 10px;
+    outline: none;
+    resize: none;
+    border: 1px solid #dfe3e8;
+    border-radius: 7px;
+    color: #343A40;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#message-form textarea {
+    height: 45px;
+}
+
+#message-form input:focus, #message-form textarea:focus {
+    border: 1px solid #1ABC9C;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#submit-btn {
+    max-width: fit-content;
+    padding: 6px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#submit-btn:hover {
+    background-color: #16A085;
+}
+
+.separator {
+    color: #dfe3e8;
+}
+
+#cards-message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-message {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 
+            0 1px 2px rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Papan Pesan Publik</h1>
+    </header>
+
+    <main>
+        <div id="container-message-input">
+            <h2>Tinggalkan Pesan Anda</h2>
+            <form id="message-form">
+                <div class="input">
+                    <h4>Nama</h4>
+                    <input type="text" name="name-input" id="name-input" placeholder="Masukkan nama anda..." required>
+                </div>
+
+                <div class="input">
+                    <h4>Pesan</h4>
+                    <textarea name="message-input" id="message-input" placeholder="Masukkan pesan anda..." required></textarea>
+                </div>
+
+                <button id="submit-btn">Kirim</button>
+            </form>
+        </div>
+
+        <hr class="separator">
+
+        <section id="cards-message-container">
+            <div class="card-message">
+                <h3>Nama pengirim</h3>
+                <p>Pesan</p>
+                <h5>Timestamp</h5>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
