@@ -1,8 +1,5 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $password = "root";
-    $database = "message_board";
+    require 'secret.php';
 
     $conn = new mysqli($host, $user, $password, $database);
 
